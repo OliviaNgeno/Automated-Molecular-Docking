@@ -19,10 +19,8 @@ The pipeline automates the preparation of input files, performs docking, and out
 ```
 Molecular_Docking_Pipeline/
 │── bin/                  # Executables (ADFRSuite, LePro, Smina, etc.)
-│── data/                 # Example input ligand & protein lists
+│── input,yml                 # Example input ligand & protein lists
 │── output/               # Generated results (docking, structures, etc.)
-│── scripts/              # Core processing scripts
-│── setup.sh              # Installation script for ADFRSuite
 │── requirements.txt      # Python dependencies
 │── environment.yml       # Conda environment file (alternative to requirements.txt)
 │── Molecular_Docking_Pipeline.py  # Main pipeline script
@@ -32,7 +30,36 @@ Molecular_Docking_Pipeline/
 
 ---
 
-## **🚀 Installation**
+# **🚀 Installation**
+### **1️⃣ Installing All Dependencies One by One**
+#### **1.1 Create a Conda Environment**
+```sh
+conda create -n Docking_env python=3.7
+conda activate Docking_env
+```
+
+#### **1.2 Install the Dependencies**
+- **PyMol**
+  ```sh
+  conda install -c schrodinger pymol
+  ```
+- **py3Dmol**
+  ```sh
+  conda install -c conda-forge py3dmol
+  ```
+- **AutoDock Vina**
+  ```sh
+  pip install vina
+  ```
+- **OpenBabel (Pybel)**
+  ```sh
+  conda install -c conda-forge openbabel
+  ```
+  ```sh
+  conda install rdkit cython
+  ```
+
+---
 ### **🔹 Step 1: Clone the Repository**
 ```sh
 git clone https://github.com/yourusername/Molecular_Docking_Pipeline.git
