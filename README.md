@@ -31,6 +31,17 @@ Molecular_Docking_Pipeline/
 ---
 
 # **🚀 Installation**
+---
+### **🔹 Step 1: Clone the Repository**
+```sh
+git clone https://github.com/yourusername/Molecular_Docking_Pipeline.git
+cd Molecular_Docking_Pipeline
+```
+
+### **🔹 Step 2: Install Dependencies**
+You can install dependencies via **pip** or **conda**:
+
+#### **Using Conda (Recommended)**
 ### **1️⃣ Installing All Dependencies One by One**
 #### **1.1 Create a Conda Environment**
 ```sh
@@ -54,37 +65,16 @@ conda activate Docking_env
 - **OpenBabel (Pybel)**
   ```sh
   conda install -c conda-forge openbabel
+```
   ```
   ```sh
   conda install rdkit cython
   ```
 
----
-### **🔹 Step 1: Clone the Repository**
-```sh
-git clone https://github.com/yourusername/Molecular_Docking_Pipeline.git
-cd Molecular_Docking_Pipeline
-```
-
-### **🔹 Step 2: Install Dependencies**
-You can install dependencies via **pip** or **conda**:
-
 #### **Using pip**
 ```sh
 pip install -r requirements.txt
 ```
-
-#### **Using Conda (Recommended)**
-```sh
-conda env create -f environment.yml
-conda activate docking_pipeline
-```
-
-### **🔹 Step 3: Install ADFRSuite**
-```sh
-bash setup.sh
-```
-This will download and set up **AutoDockTools, AutoGrid, AutoDock, and AutoDock Vina**.
 
 ### **🔹 Step 4: Ensure Executables Are in `bin/`**
 Make sure the following executables are available in the `bin/` folder:
