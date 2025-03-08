@@ -34,8 +34,8 @@ Molecular_Docking_Pipeline/
 ---
 ### **🔹 Step 1: Clone the Repository**
 ```sh
-git clone https://github.com/OliviaNgeno/Automated_Molecular_Docking.git
-cd Automated_Molecular_Docking
+git clone https://github.com/OliviaNgeno/Automated-Molecular-Docking.git
+cd Automated-Molecular-Docking
 ```
 
 ### **🔹 Step 2: Install Dependencies**
