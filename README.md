@@ -43,49 +43,49 @@ You can install dependencies via **pip** or **conda**:
 
 #### **Using Conda (Recommended)**
 ### **1️⃣ Installing All Dependencies One by One**
-#### **1.1 Create a Conda Environment**
+
+### 1. Create a Conda Environment
 ```sh
-conda create -n Docking_env python=3.7
-conda activate Docking_env
+conda create -n Docking_Env python=3.8
 ```
 
-#### **1.2 Install the Dependencies**
-- **PyMol**
-  ```sh
-  conda install -c schrodinger pymol
-  ```
-- **py3Dmol**
-  ```sh
-  conda install -c conda-forge py3dmol
-  ```
-- **AutoDock Vina**
+### 2. Activate the Environment
+```sh
+conda activate Docking_Env
+```
+
+### 3. Install Required Packages
+
+- **Install AutoDock Vina**:
   ```sh
   pip install vina
   ```
-- **OpenBabel (Pybel)**
+
+- **Install Open Babel for molecular file conversions**:
   ```sh
   conda install -c conda-forge openbabel
-```
-  ```
-  ```sh
-  conda install rdkit cython
   ```
 
-#### **Using pip**
-```sh
-pip install -r requirements.txt
-```
+- **Install PyMOL (Open-Source Version) for molecular visualization**:
+  ```sh
+  conda install -c conda-forge pymol-open-source
+  ```
+
+- **Install Python libraries required for the docking workflow**:
+  ```sh
+  pip install pyyaml pubchempy tqdm matplotlib biopython selenium pillow tabulate
+  ```
+
+- **Install Py3Dmol for 3D molecular visualization in Python**:
+  ```sh
+  conda install -c conda-forge py3dmol
+  ```
 
 ### **🔹 Step 4: Ensure Executables Are in `bin/`**
 Make sure the following executables are available in the `bin/` folder:
 - `lepro` (for protein cleaning)
 - `smina` (for docking with Smina)
 - `prepare_ligand` and `prepare_receptor` from **ADFRSuite**
-
-If needed, update permissions:
-```sh
-chmod +x bin/*
-```
 
 ---
 
